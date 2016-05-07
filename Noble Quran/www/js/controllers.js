@@ -66,7 +66,8 @@ angular.module('starter.controllers', [])
          $ionicActionSheet.show({
              buttons: [
                  { text: 'Bookmark this aya' },
-                 { text: 'Add to collections' }
+                 { text: 'Add to collections' },
+                 { text: 'Share via email' }
              ],
              titleText: 'OPTIONS',
              cancelText: 'Cancel',
@@ -80,6 +81,9 @@ angular.module('starter.controllers', [])
                  } else if(index == 1) {
                      // add to collections
                      addAyaToCollections();
+                 } else if(index == 2) {
+                     // share via email
+                     shareViaEmail();
                  }
                  return true;
              }
@@ -93,6 +97,31 @@ angular.module('starter.controllers', [])
              var ayaCollections = $localstorage.getAyaCollections();
              ayaCollections.push(bookmarkJSON);
              $localstorage.saveToAyaCollections(ayaCollections);
+         }
+
+         function shareViaEmail() {
+             if(!$rootScope.isTranslationChecked)
+             {
+                 // translation  is not enabled
+                 // so fetch translation before email
+                 var translationFile = $localstorage.getOptionTranslation();
+                 $http.get('data/' + translationFile).success(function (data) {
+                     var translationDB = data[suraName.index-1];
+                     composeAndSendEmail(translationDB[ayaIndex-1]);
+                 });
+             }
+             else
+             {
+                 // translation DB is already ready
+                 composeAndSendEmail($scope.translationDB[ayaIndex-1]);
+             }
+         }
+
+
+         function composeAndSendEmail(aya) {
+             var subject = suraName.tname + " : " + ayaIndex;
+             var message = subject  + "%0D%0A%0D%0A" + aya;
+             $scope.sendMail("", subject, message);
          }
      }
 
@@ -304,6 +333,14 @@ angular.module('starter.controllers', [])
         $ionicHistory.clearCache();
      })
 
+
+
+
+
+
+     $scope.sendMail = function(emailId,subject,message){
+         $window.open("mailto:"+ emailId + "?subject=" + subject+"&body="+message,"_self");
+     };
 
 })
 
