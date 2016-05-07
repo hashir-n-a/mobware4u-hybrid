@@ -1,0 +1,74 @@
+<ion-view ng-class="apptheme"
+          hide-back-button=true>
+    <ion-nav-buttons side="left">
+        <button class="button back-button buttons button-clear button-positive header-item" ng-click="goBack()">
+            <i class="icon ion-ios-arrow-back"> Back</i>
+        </button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <button class="button back-button buttons button-clear header-item icon-right {{nextPageButtonColor}}" ng-click="goNextPage()">
+            Next page <i class="icon ion-ios-arrow-forward"></i>
+        </button>
+    </ion-nav-buttons>
+    <ion-nav-title ng-click="titleClicked()">
+        <ion-spinner  style="float:right;color:#000000;font-size: 12px;margin: 5px;" ng-if="isSuraLoading == true"></ion-spinner>
+        <h5>{{::currentSuraDetails.tname}}<br><small>({{::currentSuraDetails.ename}})</small></h5>
+    </ion-nav-title>
+    <ion-content  class="padding"
+                  delegate-handle="ayaScroll"
+                  ng-controller="SuraDisplayCtrl">
+
+        <p ng-if="displayBismillah == true" ng-class="arabicFontSize" class="word-arabic" >بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
+
+        <ion-list>
+            <ion-item
+                    ng-class="apptheme"
+                    id="aya-{{$index}}"
+                    ng-repeat="ayat in currentSuraDB track by $index"
+                    ng-click='showOptions(currentSuraDetails.index,ayat[0].aya)' >
+                        <table width="100%">
+                            <tr>
+                                <td style="vertical-align: middle;">
+                                    ({{ayat[0].aya}})
+                                </td>
+                                <td>
+                                    <ul class="row ayat-row">
+                                        <li style="padding:1px;display: inline;" ng-repeat="word in ayat track by $index">
+                                            <table ng-class="apptheme">
+                                                <tr ng-class="arabicFont">
+                                                    <td class="word-arabic" ng-class="arabicFontSize">
+                                                        {{word.ar}}
+                                                    </td>
+                                                </tr>
+                                                <tr ng-if="isWordbyWordChecked == true">
+                                                    <td class="word-translation" ng-class="translationFontSize">
+                                                        {{word.tr}}
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                <div align="right" ng-if="isTranslationChecked == true">
+                    <a class="ayat-translation" ng-class="translationFontSize"> {{::translationDB[$index]}} </a>
+                </div>
+            </ion-item>
+        </ion-list>
+        <!--<button class="button button-balanced"-->
+                <!--ng-if="isSuraLoading == false"-->
+                <!--style="width:100%;margin-top:10px;">-->
+            <!--Next page-->
+        <!--</button>-->
+
+        <div ng-if="isSuraLoading == true" ng-class="apptheme">Loading...</div>
+        <!--
+        <ion-infinite-scroll
+                ng-if="moreDataCanBeLoaded()"
+                distance="50%"
+                icon="ion-loading-c"
+                on-infinite="loadMoreAyas()">
+        </ion-infinite-scroll> -->
+    </ion-content>
+</ion-view>

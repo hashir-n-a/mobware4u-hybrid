@@ -1,0 +1,14 @@
+<ion-view view-title="Noble Quran">
+    <ion-content>
+        <ion-list>
+            <ion-item class="item-remove-animate item-avatar item-icon-right"
+                      bindonce ng-repeat="sura in ::suras"
+                      ng-class="apptheme"
+                      type="item-text-wrap"
+                      href="#/tab/suras/{{sura.index}}">
+                <H2 class="surah-list-english"  ng-class="apptheme">{{::sura.index}}. {{::sura.tname}}</H2>
+                <i class="icon ion-chevron-right icon-accessory"></i>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

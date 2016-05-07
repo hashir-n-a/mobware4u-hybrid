@@ -1,0 +1,27 @@
+<ion-view ng-class="apptheme">
+    <ion-nav-title>
+       Bookmarks
+    </ion-nav-title>
+    <ion-content  class="padding">
+        <h5 ng-class="apptheme">Bookmark</h5>
+        <ion-list ng-if="showBookmark == true">
+            <ion-item on-hold="deleteBookmark()" ng-click="openBookmark()">
+                <p style="float:left">{{bookmark.sura}}. {{bookmark.suraName}}: {{bookmark.aya}}</p>
+                <p style="float:right">{{bookmark.time}}</p>
+            </ion-item>
+        </ion-list>
+        <div ng-if="showBookmark == false" class="bookmark-row">
+            <p ng-class="apptheme">No bookmark yet!</p>
+        </div>
+        <h5 ng-class="apptheme">Collections</h5>
+        <ion-list ng-if="showCollections == true">
+            <ion-item ng-repeat="ayat in ayaCollections track by $index" ng-click="openCollectionAya({{$index}})" on-hold="deleteCollections({{$index}})">
+                <p style="float:left">{{ayat.sura}}. {{ayat.suraName}}: {{ayat.aya}}</p>
+                <p style="float:right">{{ayat.time}}</p>
+            </ion-item>
+        </ion-list>
+        <div ng-if="showCollections == false" class="bookmark-row">
+            <p ng-class="apptheme">No collections yet!</p>
+        </div>
+    </ion-content>
+</ion-view>
