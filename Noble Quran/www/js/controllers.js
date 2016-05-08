@@ -26,10 +26,11 @@ angular.module('starter.controllers', [])
                                         $localstorage, $stateParams, $ionicScrollDelegate,
                                         $ionicPosition, $timeout, $window, $ionicHistory, Suras)
  {
-     var numberOfAyasInAPage    = 10;
-     var currentSuraDetails     = [];
-     var currentSurahArray      = [];
-     var currentPageStartAya    = 0;
+     var numberOfAyasInAPage           = 10;
+     var currentSuraDetails            = [];
+     var currentSurahArray             = [];
+     var currentSurahTranslationArray  = [];
+     var currentPageStartAya           = 0;
 
 
 
@@ -154,7 +155,7 @@ angular.module('starter.controllers', [])
              $scope.currentSuraDB = currentSurahArray.slice(
                                                         currentPageStartAya,
                                                         currentPageStartAya+numberOfAyasInAPage);
-
+             updateTranslationAyats(currentPageStartAya, currentPageStartAya+numberOfAyasInAPage);
              // if we are not at the first page then display bismillah if allowed
              if(currentPageStartAya <= 0) {
                  displayBismillahIfAllowed();
@@ -194,9 +195,12 @@ angular.module('starter.controllers', [])
              if(remainingAyas < numberOfAyasInAPage) {
                  end = remainingAyas;
              }
+
              $scope.currentSuraDB = currentSurahArray.slice(
                                                         currentPageStartAya,
                                                         end);
+
+             updateTranslationAyats(currentPageStartAya, end);
 
              // scroll to the first aya of the page
              $timeout(function() {
@@ -293,7 +297,8 @@ angular.module('starter.controllers', [])
          {
              var translationFile = $localstorage.getOptionTranslation();
              $http.get('data/' + translationFile).success(function (data) {
-                 $scope.translationDB = data[currentSuraDetails.index-1];
+                 currentSurahTranslationArray = data[currentSuraDetails.index-1];
+                 updateTranslationAyats(currentPageStartAya, currentPageStartAya + numberOfAyasInAPage);
              });
 
          }
@@ -305,6 +310,15 @@ angular.module('starter.controllers', [])
 
 
 
+
+
+     var updateTranslationAyats = function(startIndex, endIndex) {
+         if($rootScope.isTranslationChecked && currentSurahTranslationArray.length > 0)
+         {
+             $scope.translationDB = currentSurahTranslationArray.slice(startIndex, endIndex);
+
+         }
+     }
 
 
 

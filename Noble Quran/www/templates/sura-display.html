@@ -54,26 +54,17 @@
                                 </td>
                             </tr>
                         </table>
+
                 <div align="right" ng-if="isTranslationChecked == true">
-                    <a class="ayat-translation" ng-class="translationFontSize"> {{translationDB[ayat[0].aya-1]}} </a>
+                    <a class="ayat-translation" ng-class="translationFontSize"> {{translationDB[$index]}} </a>
                 </div>
+
             </ion-item>
         </ion-list>
-        <!--<button class="button button-balanced"-->
-                <!--ng-if="isSuraLoading == false"-->
-                <!--style="width:100%;margin-top:10px;">-->
-            <!--Next page-->
-        <!--</button>-->
 
         <div ng-if="isSuraLoading == true" ng-class="apptheme">
             Loading...
         </div>
-        <!--
-        <ion-infinite-scroll
-                ng-if="moreDataCanBeLoaded()"
-                distance="50%"
-                icon="ion-loading-c"
-                on-infinite="loadMoreAyas()">
-        </ion-infinite-scroll> -->
+
     </ion-content>
 </ion-view>

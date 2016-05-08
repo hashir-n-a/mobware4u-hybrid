@@ -42,7 +42,16 @@
       <file leaf-file-name="controllers.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="340" column="5" selection-start="10260" selection-end="10398" vertical-scroll-proportion="0.32038835">
+            <state line="289" column="0" selection-start="0" selection-end="17138" vertical-scroll-proportion="0.27027026">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sura-display.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/templates/sura-display.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="21" selection-start="0" selection-end="3267" vertical-scroll-proportion="-10.857142">
               <folding />
             </state>
           </provider>
@@ -80,8 +89,8 @@
         <option value="$PROJECT_DIR$/www/templates/tab-suras.html" />
         <option value="$PROJECT_DIR$/www/css/style.css" />
         <option value="$PROJECT_DIR$/www/index.html" />
-        <option value="$PROJECT_DIR$/www/templates/sura-display.html" />
         <option value="$PROJECT_DIR$/www/js/controllers.js" />
+        <option value="$PROJECT_DIR$/www/templates/sura-display.html" />
       </list>
     </option>
   </component>
@@ -140,6 +149,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="quran" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Noble Quran" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -347,13 +374,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/sura-display.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="21" selection-start="1127" selection-end="1127" vertical-scroll-proportion="0.52261305">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="2106" selection-start="0" selection-end="5129" vertical-scroll-proportion="0.0">
@@ -382,9 +402,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/sura-display.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="21" selection-start="0" selection-end="3267" vertical-scroll-proportion="-10.857142">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="340" column="5" selection-start="10260" selection-end="10398" vertical-scroll-proportion="0.32038835">
+        <state line="289" column="0" selection-start="0" selection-end="17138" vertical-scroll-proportion="0.27027026">
           <folding />
         </state>
       </provider>
