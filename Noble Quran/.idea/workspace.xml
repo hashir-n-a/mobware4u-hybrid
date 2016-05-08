@@ -12,6 +12,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/style.css" afterPath="$PROJECT_DIR$/www/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/factory/settingsFactory.js" afterPath="$PROJECT_DIR$/www/js/factory/settingsFactory.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/sura-display.html" afterPath="$PROJECT_DIR$/www/templates/sura-display.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/tab-bookmarks.html" afterPath="$PROJECT_DIR$/www/templates/tab-bookmarks.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/tab-settings.html" afterPath="$PROJECT_DIR$/www/templates/tab-settings.html" />
     </list>
     <ignored path="quran.iws" />
@@ -52,10 +53,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sura-display.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="sura-display.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/templates/sura-display.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="54" selection-start="321" selection-end="321" vertical-scroll-proportion="0.10050251">
+            <state line="5" column="22" selection-start="289" selection-end="289" vertical-scroll-proportion="-2.857143">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tab-settings.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/templates/tab-settings.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="0" selection-start="2322" selection-end="2322" vertical-scroll-proportion="-25.142857">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tab-bookmarks.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/templates/tab-bookmarks.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="13" selection-start="739" selection-end="739" vertical-scroll-proportion="-10.857142">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="259" column="25" selection-start="0" selection-end="6560" vertical-scroll-proportion="0.3398058">
               <folding />
             </state>
           </provider>
@@ -79,7 +107,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/www/templates/tab-bookmarks.html" />
         <option value="$PROJECT_DIR$/platforms/android/assets/www/js/bookmarksController.js" />
         <option value="$PROJECT_DIR$/www/js/bookmarksController.js" />
         <option value="$PROJECT_DIR$/www/js/factory/quranFactory.js" />
@@ -91,10 +118,11 @@
         <option value="$PROJECT_DIR$/www/js/app.js" />
         <option value="$PROJECT_DIR$/www/templates/tabs.html" />
         <option value="$PROJECT_DIR$/www/js/factory/settingsFactory.js" />
-        <option value="$PROJECT_DIR$/www/css/style.css" />
         <option value="$PROJECT_DIR$/www/js/controllers.js" />
-        <option value="$PROJECT_DIR$/www/templates/tab-settings.html" />
         <option value="$PROJECT_DIR$/www/templates/sura-display.html" />
+        <option value="$PROJECT_DIR$/www/css/style.css" />
+        <option value="$PROJECT_DIR$/www/templates/tab-bookmarks.html" />
+        <option value="$PROJECT_DIR$/www/templates/tab-settings.html" />
       </list>
     </option>
   </component>
@@ -424,11 +452,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/www/data/quran/51.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/factory/quranFactory.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="40" selection-start="273" selection-end="301" vertical-scroll-proportion="0.13312203" />
@@ -493,23 +516,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/sura-display.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="22" selection-start="289" selection-end="289" vertical-scroll-proportion="-2.857143">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/tab-bookmarks.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="13" selection-start="739" selection-end="739" vertical-scroll-proportion="-10.857142">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/tab-settings.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="17" selection-start="2500" selection-end="2500" vertical-scroll-proportion="0.73934424">
+        <state line="44" column="0" selection-start="2322" selection-end="2322" vertical-scroll-proportion="-25.142857">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="166" column="0" selection-start="2783" selection-end="2783" vertical-scroll-proportion="0.3592233">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/sura-display.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="54" selection-start="321" selection-end="321" vertical-scroll-proportion="0.10050251">
+        <state line="259" column="25" selection-start="0" selection-end="6560" vertical-scroll-proportion="0.3398058">
           <folding />
         </state>
       </provider>
