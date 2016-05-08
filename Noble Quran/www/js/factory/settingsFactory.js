@@ -9,8 +9,8 @@ angular.module('settings.options', [])
         var themes = ['Green', 'Blue', 'White', 'Dark'];
         var themesClasses = ['app-theme-green', 'app-theme-blue', 'app-theme-white', 'app-theme-dark'];
 
-        var arabicFont = ['Default', 'Qalam Majeed', 'KFGQPC Hafs', 'Me-Quran', 'NooreHuda'];
-        var arabicFontClasses = ['arabic-font-default', 'arabic-font-qalam', 'arabic-font-hafs', 'arabic-font-mequran', 'arabic-font-noorehuda'];
+        var arabicFont = ['Default', 'Qalam Majeed', 'KFGQPC Hafs', 'Me-Quran', 'NooreHuda', 'PDMS Saleem' , 'KFGQPC Uthman'];
+        var arabicFontClasses = ['arabic-font-default', 'arabic-font-qalam', 'arabic-font-hafs', 'arabic-font-mequran', 'arabic-font-noorehuda', 'arabic-font-saleem', 'arabic-font-uthman'];
 
         var arabicFontSize = [18, 20, 22, 24, 26, 28, 30, 32];
         var arabicFontSizeClasses = ['arabic-font-size-18', 'arabic-font-size-20', 'arabic-font-size-22',

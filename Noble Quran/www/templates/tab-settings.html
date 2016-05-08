@@ -4,7 +4,9 @@
     </ion-nav-title>
     <ion-content  class="padding">
         <ion-list>
-            <h5 ng-class="apptheme">LANGUAGE</h5>
+            <div class="item item-divider" ng-class="apptheme">
+            LANGUAGE
+            </div>
             <ion-item ng-click="selectTranslation()">
                 <p style="float:left;font-weight: bold;">Translation</p>
                 <p style="float:right;text-align: left;"><small>{{translationTitle}}</small></p>
@@ -22,7 +24,9 @@
             </ion-checkbox>
 
             <br />
-            <h5 ng-class="apptheme">APPEARANCE</h5>
+            <div class="item item-divider" ng-class="apptheme">
+            APPEARANCE
+            </div>
             <ion-item ng-click="selectTheme()">
                 <p style="float:left;font-weight: bold;">Theme</p>
                 <p style="float:right;text-align: left;"><small>{{themeTitle}}</small></p>
@@ -41,7 +45,9 @@
             </ion-item>
 
             <br />
-            <h5 ng-class="apptheme">ABOUT</h5>
+            <div class="item item-divider" ng-class="apptheme">
+            ABOUT
+            </div>
 
             <a href="mailto:quran@goodmuslims.org?subject=QuranAppV1.0">
             <ion-item >
