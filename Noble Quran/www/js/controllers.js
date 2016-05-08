@@ -339,7 +339,7 @@ angular.module('starter.controllers', [])
 
 
      $scope.sendMail = function(emailId,subject,message){
-         $window.open("mailto:"+ emailId + "?subject=" + subject+"&body="+message,"_self");
+         $window.open("mailto:subject=" + subject+"&body="+message,"_self");
      };
 
 })
