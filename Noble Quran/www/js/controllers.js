@@ -355,7 +355,7 @@ angular.module('starter.controllers', [])
 /**
  * Controller for the settings screenn
  */
-.controller('SettingsCtrl', function($scope, $rootScope, $window, $timeout, $ionicActionSheet, $localstorage, $settingsOptions)
+.controller('SettingsCtrl', function($scope, $rootScope, $ionicPopup, $window, $state, $timeout, $ionicActionSheet, $localstorage, $settingsOptions)
 {
     var translationsID = 0;
     var themesID = 1;
@@ -457,6 +457,36 @@ angular.module('starter.controllers', [])
                 actionSheetButtonSelected(id, selectionIndex);
                 return true;
             }
+        });
+    }
+
+
+    $scope.showGoToAyaPopup = function() {
+        $scope.data = {};
+
+        // An elaborate, custom popup
+        var myPopup = $ionicPopup.show({
+            template: '<input type="text" ng-model="data.aya">',
+            title: 'Go to an aya',
+            subTitle: 'Enter in format sura:aya, e.g. 1:2',
+            scope: $scope,
+            buttons: [
+                { text: 'Cancel' },
+                {
+                    text: '<b>Go</b>',
+                    type: 'button-positive',
+                    onTap: function(e) {
+                        return $scope.data.aya;
+
+                    }
+                }
+            ]
+        })
+
+        myPopup.then(function(res) {
+            var splitArray = res.split(':');
+            // open the aya
+            $state.go('tab.sura-display', {'suraIndex':splitArray[0], 'ayaIndex' : splitArray[1]});
         });
     }
 
