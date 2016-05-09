@@ -113,8 +113,10 @@ angular.module('starter.controllers', [])
              }
              else
              {
+                 var currentPageStartAyaIndex = currentPageStartAyaFromBookmarkAyaIndex(ayaIndex);
+                 var translationIndex = ayaIndex - currentPageStartAyaIndex - 1; // index starts at 0
                  // translation DB is already ready
-                 composeAndSendEmail($scope.translationDB[ayaIndex-1]);
+                 composeAndSendEmail($scope.translationDB[translationIndex]);
              }
          }
 
@@ -249,11 +251,8 @@ angular.module('starter.controllers', [])
              // if we are here from bookmarks tab then move to the bookmarked aya
              if($stateParams.ayaIndex)
              {
-                // index starts from zero, so substract one
-                 var index = $stateParams.ayaIndex-1;
-
                  // find which page the aya belongs to
-                 currentPageStartAya = Math.floor(index/numberOfAyasInAPage) * numberOfAyasInAPage;
+                 currentPageStartAya = currentPageStartAyaFromBookmarkAyaIndex($stateParams.ayaIndex);
                  var endAya = currentPageStartAya + numberOfAyasInAPage;
 
                  // slice the page data for display
@@ -310,6 +309,14 @@ angular.module('starter.controllers', [])
 
 
 
+
+      var currentPageStartAyaFromBookmarkAyaIndex = function(ayaIndex) {
+          // index starts from zero, so substract one
+          var index = ayaIndex-1;
+          // find which page the aya belongs to
+          var pageStartAya = Math.floor(index/numberOfAyasInAPage) * numberOfAyasInAPage;
+          return pageStartAya
+      }
 
 
      var updateTranslationAyats = function(startIndex, endIndex) {
