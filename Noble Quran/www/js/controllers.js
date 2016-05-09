@@ -24,7 +24,7 @@ angular.module('starter.controllers', [])
  */
 .controller('SuraDisplayCtrl', function($scope, $rootScope, $http, $ionicActionSheet,
                                         $localstorage, $stateParams, $ionicScrollDelegate,
-                                        $ionicPosition, $timeout, $window, $ionicHistory, Suras)
+                                        $ionicPosition, $timeout, $window, $ionicHistory, $sce, Suras)
  {
      var numberOfAyasInAPage           = 10;
      var currentSuraDetails            = [];
@@ -362,6 +362,31 @@ angular.module('starter.controllers', [])
      $scope.sendMail = function(emailId,subject,message){
          $window.open("mailto:?subject=" + subject+"&body="+message,"_self");
      };
+
+
+     $scope.arabicNumber = function(number) {
+         var rep = {
+             '0': '&#1776;',
+             '1': '&#1777;',
+             '2': '&#1778;',
+             '3': '&#1779;',
+             '4': '&#1780;',
+             '5': '&#1781;',
+             '6': '&#1782;',
+             '7': '&#1783;',
+             '8': '&#1784;',
+             '9': '&#1785;',
+             ':': ':'
+         }
+
+         var str='';
+         var arr = number.split("");
+
+         for(i = 0; i < arr.length; i++){
+             str += rep[arr[i]];
+         }
+         return $sce.trustAsHtml(str);;
+     }
 
 })
 

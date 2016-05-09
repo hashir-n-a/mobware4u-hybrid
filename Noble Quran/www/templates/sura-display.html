@@ -29,11 +29,9 @@
                     id="aya-{{$index}}"
                     ng-repeat="ayat in currentSuraDB track by $index"
                     ng-click='showOptions(currentSuraDetails.index,ayat[0].aya)' >
+                        <a style=" position: absolute;right:10px;color: gray; font-size:12px;">({{ayat[0].aya}})</a>
                         <table width="100%">
                             <tr>
-                                <td style="vertical-align: middle;">
-                                    ({{ayat[0].aya}})
-                                </td>
                                 <td>
                                     <ul class="row ayat-row">
                                         <li style="padding:1px;display: inline;" ng-repeat="word in ayat track by $index">
