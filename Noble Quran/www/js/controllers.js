@@ -253,10 +253,71 @@ angular.module('starter.controllers', [])
                  $ionicScrollDelegate.$getByHandle('ayaScroll').scrollTo(0,0);
              }, 1000);
          }
+         else
+         {
+             // we are at the end of a sura
+             loadNextSura();
+         }
      }
 
 
 
+         
+     /**
+      * When an end of a sura is reached
+      * then load the next sura
+      */
+     var loadNextSura = function() {
+         $scope.displayBismillah = true;
+         var nextIndex = currentSuraDetails.index + 1;
+         if(nextIndex <= 114) {
+             // only 114 suras
+             currentSuraDetails = Suras.get(nextIndex)
+             $scope.currentSuraDetails = currentSuraDetails;
+             $scope.isSuraLoading = true;
+             var fileName = 'data/quran/' + (currentSuraDetails.index-1) + '.json';
+             $http.get(fileName).success(function (data) {
+                 currentSurahArray    = data;
+                 $scope.isSuraLoading = false;
+                 $scope.currentSuraDB = currentSurahArray.slice(currentPageStartAya, currentPageStartAya + numberOfAyasInAPage);
+                 if(parseInt(currentSuraDetails.ayas) > numberOfAyasInAPage) {
+                     $scope.isNextNavButtonEnabled = true;
+                     $scope.nextPageButtonColor = 'button-positive';
+                     $scope.nav_next_button_title = "Next page";
+                 } else {
+                     $scope.isNextNavButtonEnabled = true;
+                     $scope.nextPageButtonColor = 'button-positive';
+                     if(nextIndex == 114)
+                     {
+                         $scope.nav_next_button_title = "End";
+                     }
+                     else
+                     {
+                         $scope.nav_next_button_title = "Next sura";
+                     }
+
+                 }
+             });
+
+             // get the translation, if its enabled
+             if($rootScope.isTranslationChecked)
+             {
+                 var translationFile = $localstorage.getOptionTranslation();
+                 $http.get('data/' + translationFile).success(function (data) {
+                     currentSurahTranslationArray = data[currentSuraDetails.index-1];
+                     updateTranslationAyats(currentPageStartAya, currentPageStartAya + numberOfAyasInAPage);
+                 });
+
+             }
+
+             displayBismillahIfAllowed();
+         }
+         else
+         {
+             $window.history.back();
+         }
+
+     }
 
 
 
@@ -326,9 +387,11 @@ angular.module('starter.controllers', [])
              if(parseInt(currentSuraDetails.ayas) > numberOfAyasInAPage) {
                  $scope.isNextNavButtonEnabled = true;
                  $scope.nextPageButtonColor = 'button-positive';
+                 $scope.nav_next_button_title = "Next page";
              } else {
-                 $scope.isNextNavButtonEnabled = false;
-                 $scope.nextPageButtonColor = '';
+                 $scope.isNextNavButtonEnabled = true;
+                 $scope.nextPageButtonColor = 'button-positive';
+                 $scope.nav_next_button_title = "Next sura";
              }
 
          });

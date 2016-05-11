@@ -9,12 +9,12 @@
 
     <ion-nav-buttons side="right">
         <button class="button back-button buttons button-clear header-item icon-right {{nextPageButtonColor}}" ng-click="goNextPage()">
-            Next page <i class="icon ion-ios-arrow-forward"></i>
+            {{nav_next_button_title}} <i class="icon ion-ios-arrow-forward"></i>
         </button>
     </ion-nav-buttons>
 
     <ion-nav-title ng-click="titleClicked()" align-title="center">
-        <h5 class="title title-center">{{::currentSuraDetails.tname}}</h5>
+        <h5 class="title title-center">{{currentSuraDetails.tname}}</h5>
     </ion-nav-title>
 
     <ion-content  class="padding"
