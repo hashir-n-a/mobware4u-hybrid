@@ -11,7 +11,7 @@ angular.module('starter.quran', [])
 
         return {
             extractSuraAndPrintToConsole: function() {
-                var fileName = 'data/quran_orig.json';
+                var fileName = 'data/quran_ar.json';
                 $http.get(fileName).success(function (data) {
                         quranDB = data[0].data;
 
@@ -51,13 +51,14 @@ angular.module('starter.quran', [])
                         currentSuraArray.push(currentAyatArray);
                         processedSuras.push(currentSuraArray);
 
-                        console.log(JSON.stringify(processedSuras[51]));
+                        console.log(JSON.stringify(processedSuras));
 
                     });
             },
 
             extractTranslationsAndPrintToConsole:function() {
-                $http.get('data/ur.maududi.orig').success(function (data) {
+                $http.get('data/quran-uthmani.txt').success(function (data) {
+                    debugger;
                     var translationLinesArray = data.split('\n');
 
                     var currentAyatArray   = [];

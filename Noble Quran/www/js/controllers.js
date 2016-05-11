@@ -1,13 +1,14 @@
 angular.module('starter.controllers', [])
 
 
+
 /**
  * Controller that handles the index of suras
   */
-.controller('SurasCtrl', function($scope, Suras)
-{{
+.controller('SurasCtrl', function($scope, Suras, Quran)
+{
     $scope.suras = Suras.all();
-}})
+})
 
 
 
@@ -32,7 +33,7 @@ angular.module('starter.controllers', [])
      var currentSurahTranslationArray  = [];
      var currentPageStartAya           = 0;
 
-
+     var SPECIAL_SHARE_MENU_ENABLE = false;
 
 
 
@@ -64,12 +65,19 @@ angular.module('starter.controllers', [])
          bookmarkJSON['time'] = today;
          bookmarkJSON['suraName'] = suraName.tname;
 
+         var buttonsArray = [{ text: 'Bookmark this aya' },
+                             { text: 'Add to collections' },
+                             { text: 'Share via email' }
+                            ];
+
+         // only if special share is enabled
+         if(SPECIAL_SHARE_MENU_ENABLE) {
+             buttonsArray.push({text: 'Special Share'});
+         }
+
          $ionicActionSheet.show({
-             buttons: [
-                 { text: 'Bookmark this aya' },
-                 { text: 'Add to collections' },
-                 { text: 'Share via email' }
-             ],
+
+             buttons: buttonsArray,
              titleText: 'OPTIONS',
              cancelText: 'Cancel',
              cancel: function() {
@@ -85,6 +93,8 @@ angular.module('starter.controllers', [])
                  } else if(index == 2) {
                      // share via email
                      shareViaEmail();
+                 } else if(index == 3) {
+                     specialShare();
                  }
                  return true;
              }
@@ -125,6 +135,40 @@ angular.module('starter.controllers', [])
              var subject = suraName.tname + " : " + ayaIndex;
              var message = subject  + "%0D%0A%0D%0A" + aya;
              $scope.sendMail("", subject, message);
+         }
+
+
+         function specialShare() {
+             var translationFile = 'en.yusufali';
+             var malTranslationFile = 'ml.abdulhameed';
+             var quranFile = 'quran_ar.json';
+
+             $scope.isSuraLoading = true;
+
+             $http.get('data/' + translationFile).success(function (data) {
+                 var translationDB = data[suraName.index-1];
+
+                 $http.get('data/' + malTranslationFile).success(function (data) {
+                     var malTranslationDB = data[suraName.index-1];
+
+                     $http.get('data/' + quranFile).success(function (data) {
+                         var quranDB = data[suraName.index-1];
+
+                         console.log(data);
+
+                         var message = "";
+                         message = message + quranDB[ayaIndex-1] + "%0D%0A%0D%0A";
+                         message = message + translationDB[ayaIndex-1] + "%0D%0A%0D%0A";
+                         message = message + malTranslationDB[ayaIndex-1] + "%0D%0A%0D%0A";
+
+                         composeAndSendEmail(message);
+                         $scope.isSuraLoading = false;
+
+                     });
+
+                 });
+
+             });
          }
      }
 
