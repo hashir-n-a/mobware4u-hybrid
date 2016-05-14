@@ -230,7 +230,7 @@ angular.module('starter.controllers', [])
      //  filter and display the next page ayas
      $scope.goNextPage = function() {
          var remainingAyas = currentSuraDetails.ayas - currentPageStartAya;
-         if($scope.isNextNavButtonEnabled && remainingAyas > numberOfAyasInAPage) {
+         if(remainingAyas > numberOfAyasInAPage) {
 
              // hide bismillah
              $scope.displayBismillah = false;
@@ -281,11 +281,9 @@ angular.module('starter.controllers', [])
                  $scope.isSuraLoading = false;
                  $scope.currentSuraDB = currentSurahArray.slice(currentPageStartAya, currentPageStartAya + numberOfAyasInAPage);
                  if(parseInt(currentSuraDetails.ayas) > numberOfAyasInAPage) {
-                     $scope.isNextNavButtonEnabled = true;
                      $scope.nextPageButtonColor = 'button-positive';
                      $scope.nav_next_button_title = "Next page";
                  } else {
-                     $scope.isNextNavButtonEnabled = true;
                      $scope.nextPageButtonColor = 'button-positive';
                      if(nextIndex == 114)
                      {
@@ -385,11 +383,9 @@ angular.module('starter.controllers', [])
              // only show next page button if there is more ayas to fill
              // more pages
              if(parseInt(currentSuraDetails.ayas) > numberOfAyasInAPage) {
-                 $scope.isNextNavButtonEnabled = true;
                  $scope.nextPageButtonColor = 'button-positive';
                  $scope.nav_next_button_title = "Next page";
              } else {
-                 $scope.isNextNavButtonEnabled = true;
                  $scope.nextPageButtonColor = 'button-positive';
                  $scope.nav_next_button_title = "Next sura";
              }
