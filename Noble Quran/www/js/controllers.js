@@ -206,6 +206,8 @@ angular.module('starter.controllers', [])
              if(currentPageStartAya <= 0) {
                  displayBismillahIfAllowed();
              }
+
+             updateNavBarNextButtonTitle();
          } else {
              // at the first page
             $window.history.back();
@@ -248,6 +250,8 @@ angular.module('starter.controllers', [])
 
              updateTranslationAyats(currentPageStartAya, end);
 
+             updateNavBarNextButtonTitle();
+
              // scroll to the first aya of the page
              $timeout(function() {
                  $ionicScrollDelegate.$getByHandle('ayaScroll').scrollTo(0,0);
@@ -272,6 +276,7 @@ angular.module('starter.controllers', [])
          var nextIndex = currentSuraDetails.index + 1;
          if(nextIndex <= 114) {
              // only 114 suras
+             currentPageStartAya = 0;
              currentSuraDetails = Suras.get(nextIndex)
              $scope.currentSuraDetails = currentSuraDetails;
              $scope.isSuraLoading = true;
@@ -280,21 +285,7 @@ angular.module('starter.controllers', [])
                  currentSurahArray    = data;
                  $scope.isSuraLoading = false;
                  $scope.currentSuraDB = currentSurahArray.slice(currentPageStartAya, currentPageStartAya + numberOfAyasInAPage);
-                 if(parseInt(currentSuraDetails.ayas) > numberOfAyasInAPage) {
-                     $scope.nextPageButtonColor = 'button-positive';
-                     $scope.nav_next_button_title = "Next page";
-                 } else {
-                     $scope.nextPageButtonColor = 'button-positive';
-                     if(nextIndex == 114)
-                     {
-                         $scope.nav_next_button_title = "End";
-                     }
-                     else
-                     {
-                         $scope.nav_next_button_title = "Next sura";
-                     }
-
-                 }
+                 updateNavBarNextButtonTitle();
              });
 
              // get the translation, if its enabled
@@ -309,6 +300,11 @@ angular.module('starter.controllers', [])
              }
 
              displayBismillahIfAllowed();
+
+             // scroll to the first aya of the page
+             $timeout(function() {
+                 $ionicScrollDelegate.$getByHandle('ayaScroll').scrollTo(0,0);
+             }, 1000);
          }
          else
          {
@@ -447,6 +443,25 @@ angular.module('starter.controllers', [])
 
 
 
+     var updateNavBarNextButtonTitle = function() {
+         var remainingAyas = currentSuraDetails.ayas - currentPageStartAya;
+         if(remainingAyas > numberOfAyasInAPage) {
+             $scope.nextPageButtonColor = 'button-positive';
+             $scope.nav_next_button_title = "Next page";
+         } else {
+             $scope.nextPageButtonColor = 'button-positive';
+             if(currentSuraDetails.index == 114)
+             {
+                 $scope.nav_next_button_title = "End";
+             }
+             else
+             {
+                 $scope.nav_next_button_title = "Next sura";
+             }
+
+         }
+     }
+
 
 
      // remove cache and history of this controller before leaving
@@ -465,31 +480,6 @@ angular.module('starter.controllers', [])
      $scope.sendMail = function(emailId,subject,message){
          $window.open("mailto:?subject=" + subject+"&body="+message,"_self");
      };
-
-
-     $scope.arabicNumber = function(number) {
-         var rep = {
-             '0': '&#1776;',
-             '1': '&#1777;',
-             '2': '&#1778;',
-             '3': '&#1779;',
-             '4': '&#1780;',
-             '5': '&#1781;',
-             '6': '&#1782;',
-             '7': '&#1783;',
-             '8': '&#1784;',
-             '9': '&#1785;',
-             ':': ':'
-         }
-
-         var str='';
-         var arr = number.split("");
-
-         for(i = 0; i < arr.length; i++){
-             str += rep[arr[i]];
-         }
-         return $sce.trustAsHtml(str);;
-     }
 
 })
 
