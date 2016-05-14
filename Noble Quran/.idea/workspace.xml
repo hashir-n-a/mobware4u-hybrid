@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cde9ca32-342d-4c59-9c44-68fed6bfc3bb" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/controllers.js" afterPath="$PROJECT_DIR$/www/js/controllers.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/sura-display.html" afterPath="$PROJECT_DIR$/www/templates/sura-display.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/tab-settings.html" afterPath="$PROJECT_DIR$/www/templates/tab-settings.html" />
     </list>
     <ignored path="quran.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,10 +31,8 @@
       <file leaf-file-name="controllers.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="223" column="17" selection-start="6879" selection-end="6882" vertical-scroll-proportion="0.33277026">
-              <folding>
-                <element signature="e#10558#13502#0" expanded="false" />
-              </folding>
+            <state line="158" column="49" selection-start="4997" selection-end="4997" vertical-scroll-proportion="2.7216828">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -49,25 +49,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="54" selection-start="311" selection-end="311" vertical-scroll-proportion="-4.142857">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sura-display.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/templates/sura-display.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="29" selection-start="29" selection-end="29" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tab-settings.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/templates/tab-settings.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="22" selection-start="1335" selection-end="1359" vertical-scroll-proportion="-13.142858">
+            <state line="8" column="54" selection-start="311" selection-end="311" vertical-scroll-proportion="-2.1904762">
               <folding />
             </state>
           </provider>
@@ -111,10 +93,10 @@
         <option value="$PROJECT_DIR$/www/templates/tab-bookmarks.html" />
         <option value="$PROJECT_DIR$/www/templates/tab-suras.html" />
         <option value="$PROJECT_DIR$/www/index.html" />
-        <option value="$PROJECT_DIR$/www/css/style.css" />
         <option value="$PROJECT_DIR$/www/js/factory/quranFactory.js" />
         <option value="$PROJECT_DIR$/www/templates/tab-settings.html" />
         <option value="$PROJECT_DIR$/www/templates/sura-display.html" />
+        <option value="$PROJECT_DIR$/www/css/style.css" />
         <option value="$PROJECT_DIR$/www/js/controllers.js" />
       </list>
     </option>
@@ -421,11 +403,6 @@
         <state line="28" column="14" selection-start="1278" selection-end="1278" vertical-scroll-proportion="0.56281406" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="5129" selection-start="5129" selection-end="5129" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/bookmarksController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="94" column="94" selection-start="2672" selection-end="2759" vertical-scroll-proportion="0.3534073" />
@@ -446,25 +423,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/factory/quranFactory.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="29" selection-start="2457" selection-end="2457" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/tab-settings.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="22" selection-start="1335" selection-end="1359" vertical-scroll-proportion="-13.142858">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="54" selection-start="311" selection-end="311" vertical-scroll-proportion="-4.142857">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="95" selection-start="117" selection-end="130" vertical-scroll-proportion="0.0">
@@ -472,19 +430,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/factory/quranFactory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="29" selection-start="2457" selection-end="2457" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="5129" selection-start="5129" selection-end="5129" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/sura-display.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="29" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
+        <state line="57" column="47" selection-start="3004" selection-end="3004" vertical-scroll-proportion="0.66164154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/tab-settings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="68" selection-start="2959" selection-end="2959" vertical-scroll-proportion="0.8032787">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="54" selection-start="311" selection-end="311" vertical-scroll-proportion="-2.1904762">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="223" column="17" selection-start="6879" selection-end="6882" vertical-scroll-proportion="0.33277026">
-          <folding>
-            <element signature="e#10558#13502#0" expanded="false" />
-          </folding>
+        <state line="158" column="49" selection-start="4997" selection-end="4997" vertical-scroll-proportion="2.7216828">
+          <folding />
         </state>
       </provider>
     </entry>

@@ -19,6 +19,7 @@
     </ion-nav-title>
 
     <ion-content  class="padding"
+                  overflow-scroll : true
                   delegate-handle="ayaScroll">
 
         <p ng-if="displayBismillah == true" ng-class="arabicFontSize" class="word-arabic" >بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
@@ -54,7 +55,8 @@
                         </table>
 
                 <div align="right" ng-if="isTranslationChecked == true">
-                    <a class="ayat-translation" ng-class="translationFontSize"> {{translationDB[$index]}} </a>
+                    <a class="ayat-translation"
+                       ng-class="translationFontSize"> {{translationDB[$index]}} </a>
                 </div>
 
             </ion-item>

@@ -34,7 +34,7 @@ angular.module('starter.controllers', [])
      var currentPageStartAya           = 0;
 
 
-     var SPECIAL_SHARE_MENU_ENABLE = false;
+     var SPECIAL_SHARE_MENU_ENABLE = true;
 
 
 
@@ -154,13 +154,16 @@ angular.module('starter.controllers', [])
 
                      $http.get('data/' + quranFile).success(function (data) {
                          var quranDB = data[suraName.index-1];
+                         var subject = suraName.tname + " : " + ayaIndex;
 
-                         var message = "";
-                         message = message + quranDB[ayaIndex-1] + "%0D%0A%0D%0A";
-                         message = message + translationDB[ayaIndex-1] + "%0D%0A%0D%0A";
-                         message = message + malTranslationDB[ayaIndex-1] + "%0D%0A%0D%0A";
+                         var message = subject + "      ";
+                         message = message + quranDB[ayaIndex-1] + "      ";
+                         message = message + translationDB[ayaIndex-1] + "        ";
+                         message = message + malTranslationDB[ayaIndex-1] + "        ";
 
-                         composeAndSendEmail(message);
+//                         composeAndSendEmail(message);
+                         prompt("Copy", message);
+
                          $scope.isSuraLoading = false;
 
                      });
