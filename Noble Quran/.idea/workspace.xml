@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cde9ca32-342d-4c59-9c44-68fed6bfc3bb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/controllers.js" afterPath="$PROJECT_DIR$/www/js/controllers.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/sura-display.html" afterPath="$PROJECT_DIR$/www/templates/sura-display.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/tab-settings.html" afterPath="$PROJECT_DIR$/www/templates/tab-settings.html" />
     </list>
     <ignored path="quran.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,10 +24,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="controllers.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="158" column="49" selection-start="4997" selection-end="4997" vertical-scroll-proportion="2.7216828">
+            <state line="158" column="49" selection-start="4997" selection-end="4997" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sura-display.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/templates/sura-display.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="65" column="42" selection-start="3358" selection-end="3358" vertical-scroll-proportion="0.8458961">
               <folding />
             </state>
           </provider>
@@ -95,9 +100,9 @@
         <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/www/js/factory/quranFactory.js" />
         <option value="$PROJECT_DIR$/www/templates/tab-settings.html" />
-        <option value="$PROJECT_DIR$/www/templates/sura-display.html" />
         <option value="$PROJECT_DIR$/www/css/style.css" />
         <option value="$PROJECT_DIR$/www/js/controllers.js" />
+        <option value="$PROJECT_DIR$/www/templates/sura-display.html" />
       </list>
     </option>
   </component>
@@ -442,13 +447,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/sura-display.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="47" selection-start="3004" selection-end="3004" vertical-scroll-proportion="0.66164154">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/tab-settings.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="62" column="68" selection-start="2959" selection-end="2959" vertical-scroll-proportion="0.8032787">
@@ -465,7 +463,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="158" column="49" selection-start="4997" selection-end="4997" vertical-scroll-proportion="2.7216828">
+        <state line="158" column="49" selection-start="4997" selection-end="4997" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/sura-display.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="42" selection-start="3358" selection-end="3358" vertical-scroll-proportion="0.8458961">
           <folding />
         </state>
       </provider>
