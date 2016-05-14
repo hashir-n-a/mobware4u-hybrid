@@ -29,10 +29,9 @@
       <file leaf-file-name="controllers.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="452" column="40" selection-start="14934" selection-end="14934" vertical-scroll-proportion="0.535473">
+            <state line="223" column="17" selection-start="6879" selection-end="6882" vertical-scroll-proportion="0.33277026">
               <folding>
-                <element signature="e#1262#5420#0" expanded="false" />
-                <element signature="e#10602#13546#0" expanded="false" />
+                <element signature="e#10558#13502#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -482,10 +481,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="452" column="40" selection-start="14934" selection-end="14934" vertical-scroll-proportion="0.535473">
+        <state line="223" column="17" selection-start="6879" selection-end="6882" vertical-scroll-proportion="0.33277026">
           <folding>
-            <element signature="e#1262#5420#0" expanded="false" />
-            <element signature="e#10602#13546#0" expanded="false" />
+            <element signature="e#10558#13502#0" expanded="false" />
           </folding>
         </state>
       </provider>

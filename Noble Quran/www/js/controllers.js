@@ -33,6 +33,7 @@ angular.module('starter.controllers', [])
      var currentSurahTranslationArray  = [];
      var currentPageStartAya           = 0;
 
+
      var SPECIAL_SHARE_MENU_ENABLE = false;
 
 
@@ -153,8 +154,6 @@ angular.module('starter.controllers', [])
 
                      $http.get('data/' + quranFile).success(function (data) {
                          var quranDB = data[suraName.index-1];
-
-                         console.log(data);
 
                          var message = "";
                          message = message + quranDB[ayaIndex-1] + "%0D%0A%0D%0A";
