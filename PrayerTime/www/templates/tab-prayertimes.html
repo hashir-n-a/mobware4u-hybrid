@@ -1,0 +1,29 @@
+<ion-view view-title="Prayer Times">
+  <ion-content>
+    <div style="float:left;margin-left:10px;">
+        <small>NEXT</small>
+    </div>
+    <div align="center" style="margin:30px;">
+        <h3 style="color:#FF9500;">{{nextPrayerTime.name}}</h3>
+        <h1 style="color:#FF2A68;">{{nextPrayerTime.time}}</h1>
+        <h6 style="color:#C644FC;">{{remainingTime}}</h6>
+    </div>
+    <div style="margin:10px;background-color: #4a4a4a;padding-left: 10px;text-align: left;">
+        <h5 style="color: #fff;padding:3px;">CURRENT : {{currentPrayerTime.name}} - {{currentPrayerTime.time}}</h5>
+    </div>
+    <ion-list>
+      <ion-item
+              ng-repeat="prayerTime in prayerTimes"
+                type="item-text-wrap">
+
+          <table width="100%" height="100%">
+              <tr>
+                  <td style='width:50%; text-align: center'>{{prayerTime.name}}</td>
+                  <td style='width:50%; text-align: center'>{{prayerTime.time}}</td>
+              </tr>
+          </table>
+
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

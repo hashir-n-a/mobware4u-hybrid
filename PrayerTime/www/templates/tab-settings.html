@@ -1,0 +1,68 @@
+<ion-view view-title="Settings"
+        ng-Controller="SettingsCtrl">
+  <ion-content>
+    <ion-list>
+        <div class="item item-divider">
+            Location
+        </div>
+        <ion-checkbox class="item-checkbox-right quran-checkbox"
+                      ng-model="isLocationChecked"
+                      ng-change="isLocationCheckedOrNot(isLocationChecked)">
+            <h2>Automatic</h2>
+            <small ng-if="isLocationChecked == true">
+            lat = {{loc_latitude}} <br />
+            lng = {{loc_longitude}}
+            </small>
+        </ion-checkbox>
+
+        <div ng-if="isLocationChecked == false">
+            <label class="item item-input">
+             <small>Latitude&nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;</small>
+             <input type="text"
+                    placeholder="Enter latitude"
+                    ng-model="loc_latitude"
+                    ng-text-change="onLatitudeChanged">
+            </label>
+            <label class="item item-input">
+                <small>Longitude : &nbsp;&nbsp;</small>
+                <input type="text"
+                       placeholder="Enter longitude"
+                       ng-model="loc_longitude"
+                       ng-text-change="onLongitudeChanged">
+            </label>
+            <button class="button button-positive button button-full"
+                    ng-click="saveManualLocation(loc_latitude, loc_longitude)">Save</button>
+        </div>
+
+        <div class="item item-divider">
+            Other settings
+        </div>
+        <ion-item ng-click="selectCalculationMethods()">
+            <h2>Calculation method</h2>
+            <small>{{calculationMethod}}</small>
+        </ion-item>
+        <ion-item ng-click="selectAsrType()">
+            <h2>Asr type</h2>
+            <small>{{asrMethod}}</small>
+        </ion-item>
+        <ion-item ng-click="selectTimeFormat()">
+            <h2>Time format</h2>
+            <small>{{timeFormat}}</small>
+        </ion-item>
+        <div class="item item-divider">
+            About
+        </div>
+
+        <a href="mailto:hashir@mobware4u.com?subject=PrayerTime v1.0" style="text-decoration: none;">
+        <ion-item>
+            <h2>Feedback</h2>
+        </ion-item>
+        </a>
+
+        <ion-item>
+            <h2>version 1.0</h2>
+        </ion-item>
+
+    </ion-list>
+  </ion-content>
+</ion-view>

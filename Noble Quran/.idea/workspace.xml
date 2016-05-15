@@ -2,7 +2,154 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cde9ca32-342d-4c59-9c44-68fed6bfc3bb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/sura-display.html" afterPath="$PROJECT_DIR$/www/templates/sura-display.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/.idea/PrayerTime.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/hooks/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/android/icon/drawable-hdpi-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/android/icon/drawable-ldpi-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/android/icon/drawable-mdpi-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/android/icon/drawable-xhdpi-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/android/icon/drawable-xxhdpi-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/android/icon/drawable-xxxhdpi-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/android/splash/drawable-land-hdpi-screen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/android/splash/drawable-land-ldpi-screen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/android/splash/drawable-land-mdpi-screen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/android/splash/drawable-land-xhdpi-screen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/android/splash/drawable-land-xxhdpi-screen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/android/splash/drawable-land-xxxhdpi-screen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/android/splash/drawable-port-hdpi-screen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/android/splash/drawable-port-ldpi-screen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/android/splash/drawable-port-mdpi-screen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/android/splash/drawable-port-xhdpi-screen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/android/splash/drawable-port-xxhdpi-screen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/android/splash/drawable-port-xxxhdpi-screen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/ios/icon/icon-40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/ios/icon/icon-40@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/ios/icon/icon-50.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/ios/icon/icon-50@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/ios/icon/icon-60.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/ios/icon/icon-60@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/ios/icon/icon-60@3x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/ios/icon/icon-72.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/ios/icon/icon-72@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/ios/icon/icon-76.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/ios/icon/icon-76@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/ios/icon/icon-small.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/ios/icon/icon-small@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/ios/icon/icon-small@3x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/ios/icon/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/ios/icon/icon@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/ios/splash/Default-568h@2x~iphone.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/ios/splash/Default-667h.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/ios/splash/Default-736h.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/ios/splash/Default-Landscape-736h.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/ios/splash/Default-Landscape@2x~ipad.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/ios/splash/Default-Landscape~ipad.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/ios/splash/Default-Portrait@2x~ipad.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/ios/splash/Default-Portrait~ipad.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/ios/splash/Default@2x~iphone.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/ios/splash/Default~iphone.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/resources/splash.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/img/adam.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/img/ben.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/img/ionic.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/img/max.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/img/mike.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/img/perry.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/fonts/ionicons.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/fonts/ionicons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/fonts/ionicons.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/fonts/ionicons.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/.bowerrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/.editorconfig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/.idea/scopes/scope_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/gulpfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/hooks/after_prepare/010_add_platform_class.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/ionic.project" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/scss/ionic.app.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/js/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/js/controllers.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/js/localStorageFactory.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/js/services.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/css/ionic.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/css/ionic.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/js/angular-ui/angular-ui-router.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/js/angular-ui/angular-ui-router.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/js/angular/angular-animate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/js/angular/angular-animate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/js/angular/angular-resource.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/js/angular/angular-resource.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/js/angular/angular-sanitize.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/js/angular/angular-sanitize.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/js/angular/angular.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/js/angular/angular.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/js/ionic-angular.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/js/ionic-angular.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/js/ionic.bundle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/js/ionic.bundle.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/js/ionic.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/js/ionic.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/scss/_action-sheet.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/scss/_animations.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/scss/_backdrop.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/scss/_badge.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/scss/_bar.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/scss/_button-bar.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/scss/_button.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/scss/_checkbox.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/scss/_form.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/scss/_grid.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/scss/_items.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/scss/_list.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/scss/_loading.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/scss/_menu.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/scss/_mixins.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/scss/_modal.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/scss/_platform.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/scss/_popover.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/scss/_popup.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/scss/_progress.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/scss/_radio.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/scss/_range.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/scss/_refresher.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/scss/_reset.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/scss/_scaffolding.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/scss/_select.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/scss/_slide-box.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/scss/_slides.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/scss/_spinner.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/scss/_tabs.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/scss/_toggle.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/scss/_transitions.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/scss/_type.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/scss/_util.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/scss/_variables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/scss/ionic.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/scss/ionicons/_ionicons-font.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/scss/ionicons/_ionicons-icons.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/scss/ionicons/_ionicons-variables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/scss/ionicons/ionicons.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/ionic/version.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/moment.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/lib/prayTime.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/templates/tab-prayertimes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/templates/tab-settings.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PrayerTime/www/templates/tabs.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="quran.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,16 +174,34 @@
       <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="158" column="49" selection-start="4997" selection-end="4997" vertical-scroll-proportion="0.0">
+            <state line="184" column="5" selection-start="5654" selection-end="5849" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sura-display.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="tab-settings.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/templates/tab-settings.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="56" column="72" selection-start="2668" selection-end="2728" vertical-scroll-proportion="-20.904762">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="5129" selection-start="4295" selection-end="5129" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sura-display.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/templates/sura-display.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="42" selection-start="3358" selection-end="3358" vertical-scroll-proportion="0.8458961">
+            <state line="65" column="42" selection-start="3358" selection-end="3358" vertical-scroll-proportion="-18.142857">
               <folding />
             </state>
           </provider>
@@ -54,7 +219,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="54" selection-start="311" selection-end="311" vertical-scroll-proportion="-2.1904762">
+            <state line="8" column="54" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -197,6 +362,46 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="quran" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Noble Quran" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="moment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="quran" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Noble Quran" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -277,6 +482,11 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node JS">
+      <method>
+        <option name="PhingTarget" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
       <JSDebuggerConfigurationSettings>
         <option name="engineId" value="embedded" />
@@ -315,7 +525,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="30" y="23" width="1250" height="777" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -428,9 +638,9 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/app.js">
+    <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="95" selection-start="117" selection-end="130" vertical-scroll-proportion="0.0">
+        <state line="8" column="54" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -440,37 +650,37 @@
         <state line="60" column="29" selection-start="2457" selection-end="2457" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/style.css">
+    <entry file="file://$PROJECT_DIR$/www/templates/sura-display.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="5129" selection-start="5129" selection-end="5129" vertical-scroll-proportion="0.0">
+        <state line="65" column="42" selection-start="3358" selection-end="3358" vertical-scroll-proportion="-18.142857">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/tab-settings.html">
+    <entry file="file://$PROJECT_DIR$/www/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="68" selection-start="2959" selection-end="2959" vertical-scroll-proportion="0.8032787">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="54" selection-start="311" selection-end="311" vertical-scroll-proportion="-2.1904762">
+        <state line="2" column="95" selection-start="117" selection-end="130" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="158" column="49" selection-start="4997" selection-end="4997" vertical-scroll-proportion="0.0">
+        <state line="184" column="5" selection-start="5654" selection-end="5849" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/sura-display.html">
+    <entry file="file://$PROJECT_DIR$/www/templates/tab-settings.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="42" selection-start="3358" selection-end="3358" vertical-scroll-proportion="0.8458961">
+        <state line="56" column="72" selection-start="2668" selection-end="2728" vertical-scroll-proportion="-20.904762">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="5129" selection-start="4295" selection-end="5129" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
