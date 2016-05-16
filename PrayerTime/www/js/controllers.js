@@ -96,7 +96,7 @@ angular.module('starter.controllers', [])
 
 
 
-.controller('SettingsCtrl', function($scope, $ionicActionSheet, $localstorage) {
+.controller('SettingsCtrl', function($scope, $ionicActionSheet, $localstorage, $cordovaGeolocation) {
 
         var calculationMethods = [  { text: 'Ithna Ashari'},
                                     { text: 'University of Islamic Sciences, Karachi'},
@@ -131,11 +131,14 @@ angular.module('starter.controllers', [])
         $scope.asrMethod = asrTypes[$localstorage.getAsrMethod()].text;
         $scope.timeFormat = timeFormats[$localstorage.getTimeFormat()].text;
 
-
+        displayPositionOnMap();
 
         $scope.saveManualLocation = function(latitude, longitude) {
             $localstorage.saveLocLatitude(latitude);
             $localstorage.saveLocLongitude(longitude);
+            $scope.loc_latitude  = parseFloat($localstorage.getLocLatitude());
+            $scope.loc_longitude = parseFloat($localstorage.getLocLongitude());
+            displayPositionOnMap();
         }
 
 
@@ -221,23 +224,57 @@ angular.module('starter.controllers', [])
          */
         function getPosition() {
             var options = {
-                enableHighAccuracy: false,
+                enableHighAccuracy: true,
                 maximumAge: 3600000
             }
 
-            navigator.geolocation.getCurrentPosition(onSuccess, onError, options);
+            $cordovaGeolocation.getCurrentPosition(options).then(function(position) {
+                savePosition(position);
+            }, function(error) {
+                navigator.geolocation.getCurrentPosition(onSuccess, onError, options);
 
-            function onSuccess(position) {
+                function onSuccess(position) {
+                    savePosition(position);
+                };
 
-                $scope.loc_latitude  = position.coords.latitude;
-                $scope.loc_longitude = position.coords.longitude;
-                $localstorage.saveLocLatitude(position.coords.latitude);
-                $localstorage.saveLocLongitude(position.coords.longitude);
+                function onError(error) {
+                    alert('code: '    + error.code    + '\n' + 'message: ' + error.message + '\n');
+                }
+            });
+        }
 
+
+        function savePosition(position) {
+            $localstorage.saveLocLatitude(position.coords.latitude);
+            $localstorage.saveLocLongitude(position.coords.longitude);
+
+            $scope.loc_latitude  = parseFloat(position.coords.latitude);
+            $scope.loc_longitude = parseFloat(position.coords.longitude);
+
+            // display on map
+            displayPositionOnMap();
+        }
+
+
+        function displayPositionOnMap() {
+            var latLng = new google.maps.LatLng($scope.loc_latitude, $scope.loc_longitude);
+
+            var mapOptions = {
+                center: latLng,
+                zoom: 15,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
             };
 
-            function onError(error) {
-                alert('code: '    + error.code    + '\n' + 'message: ' + error.message + '\n');
-            }
+            $scope.map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+            google.maps.event.addListenerOnce($scope.map, 'idle', function(){
+
+                var marker = new google.maps.Marker({
+                    map: $scope.map,
+                    animation: google.maps.Animation.DROP,
+                    position: latLng
+                });
+
+            });
         }
 });
