@@ -25,6 +25,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       StatusBar.styleDefault();
     }
   });
+
+    // Disable BACK button on home
+    $ionicPlatform.registerBackButtonAction(function (event) {
+        navigator.app.exitApp();
+    }, 100);
+
+
 })
 
 .config(function($stateProvider, $urlRouterProvider) {

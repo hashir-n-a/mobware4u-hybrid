@@ -1,9 +1,13 @@
 angular.module('starter.controllers', [])
 
 
-.controller('PrayerTimesCtrl', function($scope, $localstorage) {
+.controller('PrayerTimesCtrl', function($scope, $localstorage, $timeout) {
 
-        $scope.$on('$ionicView.beforeEnter', function (event, viewData ) {
+        $scope.timeTapped = function() {
+            calculatePrayerTimesForToday();
+        }
+
+        $scope.$on('$ionicView.loaded', function (event, viewData ) {
             calculatePrayerTimesForToday();
         })
 
@@ -43,6 +47,10 @@ angular.module('starter.controllers', [])
             $scope.currentPrayerTime = prayerTimes[getCurrentPrayerTimeIndex(times, date)];
 
             $scope.remainingTime = getRemainingTime(date);
+
+            $timeout(function(){
+                $scope.remainingTime = "(tap to refresh)";
+            }, 30000);
         }
 
 

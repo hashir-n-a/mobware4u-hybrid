@@ -1,15 +1,19 @@
 <ion-view view-title="Prayer Times">
   <ion-content>
     <div style="float:left;margin-left:10px;">
-        <small>NEXT</small>
+        <small class="animated fadeInLeft">NEXT</small>
     </div>
-    <div align="center" style="margin:30px;">
+    <div align="center" style="margin:30px;" ng-click="timeTapped()" class="animated bounceInDown">
         <h3 style="color:#FF9500;">{{nextPrayerTime.name}}</h3>
         <h1 style="color:#FF2A68;">{{nextPrayerTime.time}}</h1>
         <h6 style="color:#C644FC;">{{remainingTime}}</h6>
     </div>
-    <div style="margin:10px;background-color: #4a4a4a;padding-left: 10px;text-align: left;">
-        <h5 style="color: #fff;padding:3px;">previous : {{currentPrayerTime.name}} - {{currentPrayerTime.time}}</h5>
+    <div style="margin:10px;background-color: #4a4a4a;padding-left: 10px;text-align: left;"
+         class="animated fadeInLeft">
+        <h5 style="color: #fff;padding:3px;"
+            class="animated tada">
+            previous : {{currentPrayerTime.name}} - {{currentPrayerTime.time}}
+        </h5>
     </div>
     <ion-list>
       <ion-item
@@ -18,8 +22,9 @@
 
           <table width="100%" height="100%">
               <tr>
-                  <td style='width:50%; text-align: center'>{{prayerTime.name}}</td>
-                  <td style='width:50%; text-align: center'>{{prayerTime.time}}</td>
+                  <td style='width:50%; text-align: center'
+                      class="animated bounceInRight">{{prayerTime.name}}</td>
+                  <td style='width:50%; text-align: center' class="animated bounceInLeft">{{prayerTime.time}}</td>
               </tr>
           </table>
 
