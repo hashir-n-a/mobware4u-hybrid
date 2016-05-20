@@ -26,11 +26,20 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     }
   });
 
-    // Disable BACK button on home
+    // Back button exit app
     $ionicPlatform.registerBackButtonAction(function (event) {
         navigator.app.exitApp();
     }, 100);
 
+    // tizen OS : exit app on back key
+    window.addEventListener( 'tizenhwkey', function( ev ) {
+        if( ev.keyName === "back" ) {
+            try {
+                tizen.application.getCurrentApplication().exit();
+            } catch (ignore) {
+            }
+        }
+    });
 
 })
 

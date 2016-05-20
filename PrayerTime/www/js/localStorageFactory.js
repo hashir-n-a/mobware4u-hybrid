@@ -6,8 +6,8 @@ angular.module('ionic.utils', [])
         var DEFAULT_CALCULATION_METHOD      = 3;
         var DEFAULT_ASR_METHOD              = 0;
         var DEFAULT_TIME_FORMAT             = 0;
-        var DEFAULT_LOC_LAT                 = 9.9312328;
-        var DEFAULT_LOC_LONG                = 76.2673040;
+        var DEFAULT_LOC_LAT                 = 10;//9.9312328;
+        var DEFAULT_LOC_LONG                = 5;//76.2673040;
         var DEFAULT_IS_AUTOMATIC_LOC        = 'true';
 
 

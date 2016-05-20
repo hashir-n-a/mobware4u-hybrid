@@ -104,7 +104,7 @@ angular.module('starter.controllers', [])
 
 
 
-.controller('SettingsCtrl', function($scope, $ionicActionSheet, $localstorage, $cordovaGeolocation) {
+.controller('SettingsCtrl', function($scope, $ionicActionSheet, $localstorage, $http) {
 
         var calculationMethods = [  { text: 'Ithna Ashari'},
                                     { text: 'University of Islamic Sciences, Karachi'},
@@ -133,13 +133,16 @@ angular.module('starter.controllers', [])
             $scope.isLocationChecked = false;
         }
 
+
         $scope.loc_latitude  = parseFloat($localstorage.getLocLatitude());
         $scope.loc_longitude = parseFloat($localstorage.getLocLongitude());
         $scope.calculationMethod = calculationMethods[$localstorage.getCalculationMethod()].text;
         $scope.asrMethod = asrTypes[$localstorage.getAsrMethod()].text;
         $scope.timeFormat = timeFormats[$localstorage.getTimeFormat()].text;
 
+
         displayPositionOnMap();
+
 
         $scope.saveManualLocation = function(latitude, longitude) {
             $localstorage.saveLocLatitude(latitude);
@@ -193,7 +196,6 @@ angular.module('starter.controllers', [])
         }
 
 
-
         $scope.selectTimeFormat = function() {
 
             $ionicActionSheet.show({
@@ -215,7 +217,6 @@ angular.module('starter.controllers', [])
         }
 
 
-
         $scope.isLocationCheckedOrNot = function(isLocationChecked) {
             if(isLocationChecked) {
                 // automatic location
@@ -233,31 +234,42 @@ angular.module('starter.controllers', [])
         function getPosition() {
             var options = {
                 enableHighAccuracy: true,
-                maximumAge: 3600000
+                maximumAge: 3600000,
+                timeout:10000
             }
 
-            $cordovaGeolocation.getCurrentPosition(options).then(function(position) {
-                savePosition(position);
-            }, function(error) {
-                navigator.geolocation.getCurrentPosition(onSuccess, onError, options);
+            navigator.geolocation.getCurrentPosition(onSuccess, onError, options);
 
-                function onSuccess(position) {
-                    savePosition(position);
-                };
+            function onSuccess(position) {
+                savePosition(position.coords.latitude, position.coords.longitude);
+            };
 
-                function onError(error) {
-                    alert('code: '    + error.code    + '\n' + 'message: ' + error.message + '\n');
-                }
-            });
+            function onError(error) {
+                // error getting location
+                // try to get from google
+                getPositionFromGoogle();
+            }
         }
 
 
-        function savePosition(position) {
-            $localstorage.saveLocLatitude(position.coords.latitude);
-            $localstorage.saveLocLongitude(position.coords.longitude);
 
-            $scope.loc_latitude  = parseFloat(position.coords.latitude);
-            $scope.loc_longitude = parseFloat(position.coords.longitude);
+        function getPositionFromGoogle() {
+            $http.post('https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyCtRl1TbCs2bMzy8EhXUd2-TRjwSp_2bpo')
+                .success(function(data, status, headers, config){
+                    savePosition(data.location.lat, data.location.lng);
+                })
+                .error(function(data, status, headers, config){
+                    alert("Unable to automatically determine location. Please try again from outside for GPS or check your internet connection or enter location manually.")
+                })
+        }
+
+
+        function savePosition(latitude, longitude) {
+            $localstorage.saveLocLatitude(latitude);
+            $localstorage.saveLocLongitude(longitude);
+
+            $scope.loc_latitude  = parseFloat(latitude);
+            $scope.loc_longitude = parseFloat(longitude);
 
             // display on map
             displayPositionOnMap();
