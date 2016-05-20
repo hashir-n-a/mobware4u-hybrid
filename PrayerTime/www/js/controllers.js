@@ -104,7 +104,7 @@ angular.module('starter.controllers', [])
 
 
 
-.controller('SettingsCtrl', function($scope, $ionicActionSheet, $localstorage, $http) {
+.controller('SettingsCtrl', function($scope, $ionicActionSheet, $localstorage, $http, $ionicLoading) {
 
         var calculationMethods = [  { text: 'Ithna Ashari'},
                                     { text: 'University of Islamic Sciences, Karachi'},
@@ -221,6 +221,9 @@ angular.module('starter.controllers', [])
             if(isLocationChecked) {
                 // automatic location
                 getPosition();
+                $ionicLoading.show({
+                    template: 'Fetching location ...'
+                });
             }
             $localstorage.saveIsAutomaticLocation(isLocationChecked);
         }
@@ -259,7 +262,9 @@ angular.module('starter.controllers', [])
                     savePosition(data.location.lat, data.location.lng);
                 })
                 .error(function(data, status, headers, config){
+                    $ionicLoading.hide();
                     alert("Unable to automatically determine location. Please try again from outside for GPS or check your internet connection or enter location manually.")
+
                 })
         }
 
@@ -273,6 +278,8 @@ angular.module('starter.controllers', [])
 
             // display on map
             displayPositionOnMap();
+
+            $ionicLoading.hide();
         }
 
 
