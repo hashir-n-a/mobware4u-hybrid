@@ -31,10 +31,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controllers.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="261" column="172" selection-start="9440" selection-end="9440" vertical-scroll-proportion="0.7989865">
+            <state line="273" column="23" selection-start="9773" selection-end="9773" vertical-scroll-proportion="-43.53846">
               <folding>
                 <element signature="e#4791#4847#0" expanded="false" />
                 <element signature="e#5413#5727#0" expanded="false" />
@@ -65,10 +65,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="localStorageFactory.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="localStorageFactory.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/localStorageFactory.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="50" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0">
+            <state line="8" column="46" selection-start="292" selection-end="292" vertical-scroll-proportion="0.15213946">
               <folding />
             </state>
           </provider>
@@ -103,16 +103,16 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/www/templates/tab-chats.html" />
         <option value="$PROJECT_DIR$/www/templates/tabs.html" />
-        <option value="$PROJECT_DIR$/www/templates/tab-settings.html" />
         <option value="$PROJECT_DIR$/www/css/animate.css" />
         <option value="$PROJECT_DIR$/www/css/style.css" />
         <option value="$PROJECT_DIR$/www/lib/prayTime.js" />
         <option value="$PROJECT_DIR$/www/templates/tab-prayertimes.html" />
-        <option value="$PROJECT_DIR$/www/js/localStorageFactory.js" />
         <option value="$PROJECT_DIR$/www/js/app.js" />
         <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/www/js/controllers.js" />
+        <option value="$PROJECT_DIR$/www/templates/tab-settings.html" />
+        <option value="$PROJECT_DIR$/www/js/localStorageFactory.js" />
       </list>
     </option>
   </component>
@@ -365,30 +365,11 @@
         <state line="0" column="7914" selection-start="7914" selection-end="7914" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/tab-prayertimes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="16" selection-start="1309" selection-end="1309" vertical-scroll-proportion="-18.285715">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/localStorageFactory.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="50" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="7" selection-start="1508" selection-end="1508" vertical-scroll-proportion="0.0">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/tab-settings.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="14" selection-start="309" selection-end="309" vertical-scroll-proportion="0.2557377" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config.xml">
@@ -407,7 +388,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="261" column="172" selection-start="9440" selection-end="9440" vertical-scroll-proportion="0.7989865">
+        <state line="273" column="23" selection-start="9773" selection-end="9773" vertical-scroll-proportion="-43.53846">
           <folding>
             <element signature="e#4791#4847#0" expanded="false" />
             <element signature="e#5413#5727#0" expanded="false" />
@@ -416,6 +397,27 @@
             <element signature="e#7266#7949#0" expanded="false" />
             <element signature="e#8020#8220#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/tab-settings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="49" selection-start="312" selection-end="312" vertical-scroll-proportion="0.2244898">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/tab-prayertimes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="16" selection-start="1309" selection-end="1309" vertical-scroll-proportion="-18.285715">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/localStorageFactory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="46" selection-start="292" selection-end="292" vertical-scroll-proportion="0.15213946">
+          <folding />
         </state>
       </provider>
     </entry>

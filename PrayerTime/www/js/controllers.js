@@ -277,24 +277,28 @@ angular.module('starter.controllers', [])
 
 
         function displayPositionOnMap() {
-            var latLng = new google.maps.LatLng($scope.loc_latitude, $scope.loc_longitude);
+            try {
+                var latLng = new google.maps.LatLng($scope.loc_latitude, $scope.loc_longitude);
 
-            var mapOptions = {
-                center: latLng,
-                zoom: 15,
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-            };
+                var mapOptions = {
+                    center: latLng,
+                    zoom: 15,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
 
-            $scope.map = new google.maps.Map(document.getElementById("map"), mapOptions);
+                $scope.map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
-            google.maps.event.addListenerOnce($scope.map, 'idle', function(){
+                google.maps.event.addListenerOnce($scope.map, 'idle', function(){
 
-                var marker = new google.maps.Marker({
-                    map: $scope.map,
-                    animation: google.maps.Animation.DROP,
-                    position: latLng
+                    var marker = new google.maps.Marker({
+                        map: $scope.map,
+                        animation: google.maps.Animation.DROP,
+                        position: latLng
+                    });
+
                 });
+            }catch(error) {
 
-            });
+            }
         }
 });
