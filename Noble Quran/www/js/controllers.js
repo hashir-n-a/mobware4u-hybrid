@@ -34,7 +34,7 @@ angular.module('starter.controllers', [])
      var currentPageStartAya           = 0;
 
 
-     var SPECIAL_SHARE_MENU_ENABLE = true;
+     var SPECIAL_SHARE_MENU_ENABLE = false;
 
 
 
@@ -352,6 +352,7 @@ angular.module('starter.controllers', [])
              // if we are here from bookmarks tab then move to the bookmarked aya
              if($stateParams.ayaIndex)
              {
+                 var index = $stateParams.ayaIndex - 1;
                  // find which page the aya belongs to
                  currentPageStartAya = currentPageStartAyaFromBookmarkAyaIndex($stateParams.ayaIndex);
                  var endAya = currentPageStartAya + numberOfAyasInAPage;
@@ -380,13 +381,7 @@ angular.module('starter.controllers', [])
 
              // only show next page button if there is more ayas to fill
              // more pages
-             if(parseInt(currentSuraDetails.ayas) > numberOfAyasInAPage) {
-                 $scope.nextPageButtonColor = 'button-positive';
-                 $scope.nav_next_button_title = "Next page";
-             } else {
-                 $scope.nextPageButtonColor = 'button-positive';
-                 $scope.nav_next_button_title = "Next sura";
-             }
+             updateNavBarNextButtonTitle();
 
          });
 
@@ -598,6 +593,32 @@ angular.module('starter.controllers', [])
                 actionSheetButtonSelected(id, selectionIndex);
                 return true;
             }
+        });
+    }
+
+
+    $scope.showHints = function() {
+        var alertPopup = $ionicPopup.alert({
+            title: 'Hints',
+            template: 'Tap the sura title in the top bar to exit sura display'
+        });
+
+        alertPopup.then(function(res) {
+
+        });
+    }
+
+
+    $scope.showCredits = function() {
+        var quran = '1) Quran Translations from tanzil.net (<a href="http://tanzil.net" target="_blank">website</a>)';
+        var icon = '2) Icon by Ibrahim ebi via Wikimedia Commons from Wikimedia Commons (<a href="https://commons.wikimedia.org/wiki/File%3AQuran_logo.png" target="_blank">website</a>)'
+        var alertPopup = $ionicPopup.alert({
+            title: 'Credits',
+            template: quran + '<br /><br />' + icon
+        });
+
+        alertPopup.then(function(res) {
+
         });
     }
 

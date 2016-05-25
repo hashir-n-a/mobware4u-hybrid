@@ -3,7 +3,7 @@
 angular.module('starter', ['ionic','starter.controllers', 'starter.suralist', 'starter.quran', 'ionic.utils', 'bookmark.controller' , 'settings.options'])
 
 
-.run(function($ionicPlatform, $localstorage, $rootScope) {
+.run(function($ionicPlatform, $localstorage, $rootScope, $state) {
 
     // not a very good idea. should change later on
     // load the settings before the view is rendered
@@ -45,6 +45,33 @@ angular.module('starter', ['ionic','starter.controllers', 'starter.suralist', 's
         if (window.StatusBar) {
           // org.apache.cordova.statusbar required
           StatusBar.styleDefault();
+        }
+    })
+
+
+    // Back button handling
+    $ionicPlatform.registerBackButtonAction(function (event) {
+        if($state.current.name=="tab.suras"){
+            navigator.app.exitApp();
+        }
+        else {
+            navigator.app.backHistory();
+        }
+    }, 100)
+
+
+    // tizen OS : back key handling
+    window.addEventListener( 'tizenhwkey', function( ev ) {
+        if( ev.keyName === "back" ) {
+            try {
+                if($state.current.name=="tab.suras"){
+                    tizen.application.getCurrentApplication().exit();
+                }
+                else {
+                    window.history.back();
+                }
+            } catch (ignore) {
+            }
         }
     })
 

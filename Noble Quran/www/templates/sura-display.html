@@ -25,13 +25,17 @@
         <p ng-if="displayBismillah == true" ng-class="arabicFontSize" class="word-arabic" >بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
 
         <ion-list>
-            <ion-item
+            <ion-item class="ayat-list-item"
                     ng-class="apptheme"
                     id="aya-{{$index}}"
-                    ng-repeat="ayat in currentSuraDB track by $index"
-                    ng-click='showOptions(currentSuraDetails.index,ayat[0].aya)' >
-                        <a style=" position: absolute;right:10px;color: gray; font-size:12px;">({{ayat[0].aya}})</a>
+                    ng-repeat="ayat in currentSuraDB track by $index" >
                         <table width="100%">
+                            <tr>
+                            <td width="100%">
+                                <a style=" position: absolute;right:10px;color: gray; font-size:12px;">({{ayat[0].aya}})</a>
+                                <br />
+                            </td>
+                            </tr>
                             <tr>
                                 <td>
                                     <ul class="row ayat-row">
@@ -58,7 +62,13 @@
                     <a class="ayat-translation"
                        ng-class="translationFontSize"> {{translationDB[$index]}} </a>
                 </div>
-
+                <div style='display: table;'>
+                <br />
+                <button ng-click='showOptions(currentSuraDetails.index,ayat[0].aya)'
+                        class="button-outline button-small button-positive button">
+                    options
+                </button>
+                </div>
             </ion-item>
             <ion-item ng-class="apptheme" ng-if="isSuraLoading == false">
                 <button class="button button-positive"
