@@ -1,6 +1,4 @@
  
-
-
 function startTime() {
     var today = new Date();
     var h = today.getHours();
@@ -10,11 +8,20 @@ function startTime() {
     
     $('#knob').val(s).trigger('change');
     
-    t = setTimeout(function () {
-  		startTime()
+    setTimeout(function () {
+  		startTime();
     }, 500);
  }
  
+
+function onScreenStateChanged(previousState, changedState) {
+    //alert("Screen state changed from " + previousState + " to " + changedState);
+    if (changedState == "SCREEN_DIM"   ){
+        //tizen.power.restoreScreenBrightness();
+        tizen.power.turnScreenOn();
+    }       
+}
+
 
 function initialise() {
 	
@@ -27,18 +34,25 @@ function initialise() {
         }
     });
     
-    document.addEventListener("webkitvisibilitychange", function() {
-    	 if (document.webkitHidden) {
-    		    try {
-                	tizen.power.release("SCREEN");
-    		    }catch(ignore) {}
-    	 }
+    document.addEventListener("visibilitychange", function() {
+        if (document.hidden) {
+            try {
+            	tizen.power.release("SCREEN");
+            }catch(ignore){}
+        } else  {
+        	 try {
+        		tizen.power.request("SCREEN", "SCREEN_NORMAL");
+             }catch(ignore){}
+        }
     }, false);
     
+    
     try {
-    	tizen.power.request("SCREEN", "SCREEN_NORMAL");
-    }catch(ignore) {}
+    	// whenever screen turns dim then turn it back on
+    	tizen.power.setScreenStateChangeListener(onScreenStateChanged);
+    }catch(ignore){}
 
+    
     $("#knob").knob({
         'thickness':0.1,
         'readOnly':true,
@@ -50,4 +64,4 @@ function initialise() {
     });
     
 	startTime();
-};
+}
