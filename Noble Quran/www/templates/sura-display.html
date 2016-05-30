@@ -22,52 +22,52 @@
                   overflow-scroll : true
                   delegate-handle="ayaScroll">
 
-        <p ng-if="displayBismillah == true" ng-class="arabicFontSize" class="word-arabic" >بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
+        <p ng-if="displayBismillah == true" class="bismillah" >بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
 
         <ion-list>
             <ion-item class="ayat-list-item"
-                    ng-class="apptheme"
-                    id="aya-{{$index}}"
-                    ng-repeat="ayat in currentSuraDB track by $index" >
-                        <table width="100%">
-                            <tr>
-                            <td width="100%">
-                                <a style=" position: absolute;right:10px;color: gray; font-size:12px;">({{ayat[0].aya}})</a>
-                                <br />
-                            </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <ul class="row ayat-row">
-                                        <li style="padding:1px;display: inline;" ng-repeat="word in ayat track by $index">
-                                            <table ng-class="apptheme">
-                                                <tr ng-class="arabicFont">
-                                                    <td class="word-arabic" ng-class="arabicFontSize">
-                                                        {{word.ar}}
-                                                    </td>
-                                                </tr>
-                                                <tr ng-if="isWordbyWordChecked == true">
-                                                    <td class="word-translation" ng-class="translationFontSize">
-                                                        {{word.tr}}
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </table>
+                      ng-class="apptheme"
+                      id="aya-{{$index}}"
+                      ng-repeat="ayat in currentSuraDB track by $index" >
+                <table width="100%">
+                    <tr>
+                        <td width="100%">
+                            <a style=" position: absolute;right:10px;color: gray; font-size:12px;">({{ayat[0].aya}})</a>
+                            <br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul class="row ayat-row">
+                                <li style="padding:1px;display: inline;" ng-repeat="word in ayat track by $index">
+                                    <table ng-class="apptheme">
+                                        <tr ng-class="arabicFontSize">
+                                            <td class="word-arabic" ng-class="arabicFont" width="100%">
+                                                {{word.ar}}
+                                            </td>
+                                        </tr>
+                                        <tr ng-if="isWordbyWordChecked == true">
+                                            <td class="word-translation" ng-class="translationFontSize">
+                                                {{word.tr}}
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
 
                 <div align="right" ng-if="isTranslationChecked == true">
                     <a class="ayat-translation"
                        ng-class="translationFontSize"> {{translationDB[$index]}} </a>
                 </div>
                 <div style='display: table;'>
-                <br />
-                <button ng-click='showOptions(currentSuraDetails.index,ayat[0].aya)'
-                        class="button-outline button-small button-positive button">
-                    options
-                </button>
+                    <br />
+                    <button ng-click='showOptions(currentSuraDetails.index,ayat[0].aya)'
+                            class="button-outline button-small button-positive button">
+                        options
+                    </button>
                 </div>
             </ion-item>
             <ion-item ng-class="apptheme" ng-if="isSuraLoading == false">
