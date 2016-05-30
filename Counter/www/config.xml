@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://mobware4u.com" version="1.0.0" viewmodes="fullscreen">
+    <tizen:application id="sUK5d7by8z.Counter" package="sUK5d7by8z" required_version="2.3"/>
+    <author href="http://mobware4u.com" email="hashir@mobware4u.com">Hashir N A</author>
+    <content src="index.html"/>
+    <feature name="http://tizen.org/feature/screen.size.normal"/>
+    <icon src="icon.png" height="117" width="117"/>
+    <name>Counter</name>
+    <tizen:profile name="mobile"/>
+    <tizen:setting screen-orientation="portrait" context-menu="enable" background-support="disable" encryption="disable" install-location="auto" hwkey-event="enable"/>
+</widget>

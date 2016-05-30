@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cde9ca32-342d-4c59-9c44-68fed6bfc3bb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/css/style.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/style.css" afterPath="$PROJECT_DIR$/www/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/app.js" afterPath="$PROJECT_DIR$/www/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/factory/settingsFactory.js" afterPath="$PROJECT_DIR$/www/js/factory/settingsFactory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/sura-display.html" afterPath="$PROJECT_DIR$/www/templates/sura-display.html" />
-    </list>
+    <list default="true" id="cde9ca32-342d-4c59-9c44-68fed6bfc3bb" name="Default" comment="" />
     <ignored path="quran.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -98,6 +90,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -202,7 +195,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -367,72 +359,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/factory/suralistFactory.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="137" column="0" selection-start="9446" selection-end="9446" vertical-scroll-proportion="2.6601942">
-          <folding />
-        </state>
+        <state line="137" column="0" selection-start="9446" selection-end="9446" vertical-scroll-proportion="2.6601942" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/factory/quranFactory.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="29" selection-start="2457" selection-end="2457" vertical-scroll-proportion="1.1410459">
-          <folding />
-        </state>
+        <state line="60" column="29" selection-start="2457" selection-end="2457" vertical-scroll-proportion="1.1410459" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="58" selection-start="394" selection-end="404" vertical-scroll-proportion="0.4854369">
-          <folding />
-        </state>
+        <state line="25" column="58" selection-start="394" selection-end="404" vertical-scroll-proportion="0.4854369" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="34" selection-start="851" selection-end="851" vertical-scroll-proportion="-0.4854369">
-          <folding />
-        </state>
+        <state line="20" column="34" selection-start="851" selection-end="851" vertical-scroll-proportion="-0.4854369" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/factory/localStorageFactory.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="66" selection-start="392" selection-end="392" vertical-scroll-proportion="0.1711569">
-          <folding />
-        </state>
+        <state line="9" column="66" selection-start="392" selection-end="392" vertical-scroll-proportion="0.1711569" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/factory/settingsFactory.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="18" selection-start="1997" selection-end="1997" vertical-scroll-proportion="0.815534">
-          <folding />
-        </state>
+        <state line="42" column="18" selection-start="1997" selection-end="1997" vertical-scroll-proportion="0.815534" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/css/style.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="5366" selection-start="5366" selection-end="5366" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="5366" selection-start="5366" selection-end="5366" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="25" selection-start="345" selection-end="345" vertical-scroll-proportion="0.1295082">
-          <folding />
-        </state>
+        <state line="9" column="25" selection-start="345" selection-end="345" vertical-scroll-proportion="0.1295082" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="152" column="18" selection-start="0" selection-end="6436" vertical-scroll-proportion="0.17475729">
-          <folding />
-        </state>
+        <state line="152" column="18" selection-start="0" selection-end="6436" vertical-scroll-proportion="0.17475729" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/sura-display.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="11" selection-start="3865" selection-end="3865" vertical-scroll-proportion="1.7487438">
-          <folding />
-        </state>
+        <state line="87" column="11" selection-start="3865" selection-end="3865" vertical-scroll-proportion="1.7487438" />
       </provider>
     </entry>
   </component>
